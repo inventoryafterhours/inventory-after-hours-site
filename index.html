@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inventory After Hours</title>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/home-page.png" type="image/png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
@@ -11,11 +12,13 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
+      background: #f7f7f7 url('https://images.unsplash.com/photo-1615394760506-cff5d6cd3b93?auto=format&fit=crop&w=1600&q=80') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
       color: #333;
     }
     header, footer {
-      background-color: #004466;
+      background-color: rgba(0, 68, 102, 0.95);
       color: #ffffff;
       text-align: center;
       padding: 2rem 1rem;
@@ -27,6 +30,8 @@
       padding: 2rem;
       max-width: 800px;
       margin: auto;
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
     }
     .button {
       display: inline-block;
@@ -56,15 +61,39 @@
       margin-top: 1rem;
       color: #666;
     }
-    .contact-info a {
-      color: #ffcc00;
-      text-decoration: none;
-    }
     ul {
       padding-left: 1.2rem;
     }
     ul li {
       margin-bottom: 0.5rem;
+    }
+    @media screen and (max-width: 600px) {
+      header, footer, section {
+        padding: 1rem;
+      }
+      .button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+        text-align: center;
+      }
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+      th {
+        background-color: #004466;
+        color: white;
+        text-align: left;
+        padding-top: 1rem;
+      }
+      td {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        text-align: left;
+        padding-left: 0;
+      }
     }
   </style>
 </head>
@@ -105,12 +134,18 @@
   </section>
 
   <section>
-    <h2>Sample Reports</h2>
-    <p>Take a look at the quality of our work:</p>
+    <h2>What’s in Your Inventory Report?</h2>
+    <p>Our inventory reports are detailed, impartial, and fully compliant with tenancy deposit protection requirements. Each report includes:</p>
     <ul>
-      <li><a href="/sample-checkin.pdf" target="_blank">Sample Check-In Report</a></li>
-      <li><a href="/sample-checkout.pdf" target="_blank">Sample Check-Out Report</a></li>
+      <li>✅ <strong>Cover sheet</strong> with inspection date, address, and inspector details</li>
+      <li>🏡 <strong>Room-by-room breakdown</strong> of furniture, fixtures, fittings, walls, floors, windows, and appliances</li>
+      <li>📸 <strong>High-quality photographs</strong> documenting the condition of items and surfaces</li>
+      <li>📌 Notes on <strong>cleanliness, damage, missing items, and wear & tear</strong></li>
+      <li>📦 Notes on <strong>meter readings, keys provided, smoke detector checks</strong></li>
+      <li>🖊️ <strong>Signature page</strong> to be signed by both the tenant(s) and landlord or agent</li>
+      <li>📄 Delivered in <strong>PDF format</strong>, typically within 72–96 hours (or 24 hours with express add-on)</li>
     </ul>
+    <p>Reports are suitable for check-in, check-out, and interim inspections. They are formatted for ease of comparison over the course of a tenancy and serve as a vital reference for deposit-related discussions.</p>
   </section>
 
   <footer>
