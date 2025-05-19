@@ -23,6 +23,13 @@
       text-align: center;
       padding: 2rem 1rem;
     }
+    header::after {
+      content: 'Evening & Weekend Property Inspections – Fast, Fair, Professional';
+      display: block;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
     h1, h2 {
       margin: 0 0 1rem 0;
     }
@@ -30,8 +37,10 @@
       padding: 2rem;
       max-width: 800px;
       margin: auto;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255, 255, 255, 0.95) url('https://images.unsplash.com/photo-1558981285-6f0c94958bb6?auto=format&fit=crop&w=1400&q=40') no-repeat center top;
+      background-size: contain;
       border-radius: 8px;
+      background-blend-mode: lighten;
     }
     .button {
       display: inline-block;
@@ -109,13 +118,13 @@
     <table>
       <thead>
         <tr>
-          <th>Property Type</th><th>Check-In</th><th>Check-Out</th><th>Interim Visit</th>
+          <th>Property Type</th><th>Check-In</th><th>Check-Out</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>Studio / 1 Bed</td><td>£85</td><td>£85</td><td>£60</td></tr>
-        <tr><td>2 Bedroom</td><td>£95</td><td>£95</td><td>£70</td></tr>
-        <tr><td>3+ Bedroom</td><td>£115</td><td>£115</td><td>£80</td></tr>
+        <tr><td>Studio / 1 Bed</td><td>£85</td><td>£85</td></tr>
+        <tr><td>2 Bedroom</td><td>£95</td><td>£95</td></tr>
+        <tr><td>3+ Bedroom</td><td>£115</td><td>£115</td></tr>
       </tbody>
     </table>
     <p class="note">
@@ -130,7 +139,7 @@
     <a href="https://calendly.com/inventoryafterhours/30min" class="button">Book Studio / 1 Bed – £85</a>
     <a href="https://calendly.com/inventoryafterhours/2-bed-check-in-out-interim-report" class="button">Book 2 Bedroom – £95</a>
     <a href="https://calendly.com/inventoryafterhours/3-bed-check-in-out-interim-report" class="button">Book 3+ Bedroom – £115</a>
-    <p class="note">Bookings are subject to availability and confirmation. We serve areas within 45–60 minutes of SW1 and HA7.</p>
+    <p class="note">Bookings are subject to availability and confirmation. We serve central London and most surrounding areas across the city within a 1-hour radius of SW1 or HA7.</p>
   </section>
 
   <section>
@@ -149,8 +158,8 @@
   </section>
 
   <footer>
-    <p>Contact us at <a href="mailto:inventoryafterhours@gmail.com">inventoryafterhours@gmail.com</a></p>
-    <p>Serving London SW1P, HA7 and surrounding areas</p>
+    <p>Contact us at <a href="mailto:inventoryafterhours@gmail.com" style="color:#ffffff;">inventoryafterhours@gmail.com</a></p>
+    <p>Serving central London and surrounding areas</p>
   </footer>
 </body>
 </html>
