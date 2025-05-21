@@ -4,15 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inventory After Hours</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/30/Home-icon.svg" type="image/svg+xml">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5N49FMPDN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-C5N49FMPDN');
-  </script>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/document--v1.png" type="image/png">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
@@ -20,26 +12,57 @@
       font-family: 'Inter', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f7f7f7;
-      color: #333;
+      background: #f4f6f8;
+      color: #222;
     }
-    header, footer {
-      background: linear-gradient(135deg, #004466, #007399);
-      color: #ffffff;
+
+    header {
+      background: linear-gradient(to right, #003d66, #005580);
+      color: #fff;
       text-align: center;
       padding: 2rem 1rem;
     }
-    h1, h2 {
-      margin: 0 0 1rem 0;
+
+    .hero-banner {
+      background: url('https://images.unsplash.com/photo-1560185008-aac1ad2fa3e8?fit=crop&w=1600&q=60') center/cover no-repeat;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
     }
+    .hero-banner h2 {
+      font-size: 2rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .hero-banner p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .hero-banner a.button {
+      background: #ffcc00;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
     section {
       padding: 2rem;
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+      margin-bottom: 2rem;
     }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      color: #003d66;
+    }
+
     .button {
       display: inline-block;
       background: #ffcc00;
@@ -49,38 +72,109 @@
       font-weight: bold;
       border-radius: 5px;
       margin: 0.5rem 0.5rem 1rem 0;
+      transition: background 0.2s ease;
     }
+
+    .button:hover {
+      background: #e6b800;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 1rem;
     }
+
     th, td {
       border: 1px solid #ccc;
       padding: 0.75rem;
       text-align: center;
     }
+
     th {
       background-color: #e6f2f8;
     }
+
     .note {
       font-size: 0.9rem;
       margin-top: 1rem;
       color: #666;
     }
+
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
+
     ul li {
       margin-bottom: 0.5rem;
     }
+
+    footer {
+      background: linear-gradient(to right, #003d66, #005580);
+      color: #ffffff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ffcc00;
+      color: #000;
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border-radius: 30px;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .sticky-cta {
+        display: block;
+      }
+    }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5N49FMPDN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C5N49FMPDN');
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "rn7o1pf4nx");
+  </script>
 </head>
+
 <body>
   <header>
     <h1>Inventory After Hours</h1>
-    <p>Fast, Fair, Professional</p>
+    <p>Fast, Fair, Professional – Evening & Weekend Reports</p>
   </header>
+
+  <div class="hero-banner">
+    <h2>Evening & Weekend Tenancy Inspections in London</h2>
+    <p>Trusted by landlords. Detailed PDF reports. Delivered fast.</p>
+    <a href="#booking" class="button">Book Now</a>
+  </div>
 
   <section>
     <h2>Our Services</h2>
@@ -103,7 +197,7 @@
     </p>
   </section>
 
-  <section>
+  <section id="booking">
     <h2>Book an Instant Appointment</h2>
     <p>Select your property type to book a 60-minute inventory appointment with upfront payment and real-time confirmation.</p>
     <a href="https://calendly.com/inventoryafterhours/30min" class="button">Book Studio / 1 Bed – £85</a>
@@ -124,12 +218,13 @@
       <li>🖊️ <strong>Signature page</strong> to be signed by both the tenant(s) and landlord or agent</li>
       <li>📄 Delivered in <strong>PDF format</strong>, typically within 72–96 hours (or 24 hours with express add-on)</li>
     </ul>
-    <p>Reports are suitable for check-in, check-out, and interim inspections. They are formatted for ease of comparison over the course of a tenancy and serve as a vital reference for deposit-related discussions.</p>
   </section>
 
   <footer>
-    <p>Contact us at <a href="mailto:inventoryafterhours@gmail.com" style="color: white; font-weight: bold;">inventoryafterhours@gmail.com</a></p>
+    <p>Contact us at <a href="mailto:inventoryafterhours@gmail.com">inventoryafterhours@gmail.com</a></p>
     <p>Proudly serving London since 2021</p>
   </footer>
+
+  <a href="#booking" class="sticky-cta">Book Now</a>
 </body>
 </html>
